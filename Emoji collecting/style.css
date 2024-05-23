@@ -1,0 +1,196 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f6f9;
+    background-image: url(images/background.png);
+    animation: moveIt 20s linear infinite;
+}
+
+.navbar {
+    width: 115em;
+    background-color: #e0cf30;
+    display: flex;
+    margin: 1em;
+    align-items: center;
+    padding: 1em 1em;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: slideDown 2s ease-out;
+    border-radius: 1em;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.menu a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ffeb3b;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+select,
+input[type="text"] {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+select:focus,
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add-btn {
+    padding: 15px 30px;
+    background-color: #42b883;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: pulse 1s infinite alternate;
+}
+
+.add-btn:hover {
+    background-color: #36a374;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+.selected-emoji {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 36px;
+    color: #007bff;
+}
+
+.emoji-item {
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fffacd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.emoji-id {
+    font-weight: bold;
+    color: #555;
+}
+
+.emoji {
+    color: #ffc107;
+}
+
+.delete-form {
+    display: inline;
+}
+
+.edit-form {
+    display: inline;
+}
+
+.delofedit {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 1.2em;
+}
+
+.delofedit:hover {
+    background-color: #e68a00;
+}
+
+.emoji-item:hover {
+    transform: translateY(-5px);
+}
+
+@keyframes moveIt {
+    from {background-position: bottom left;}
+    to {background-position: top right;}
+}
+
+.geschiedenis {
+    font-size: 1.03em;
+}
+
+@keyframes flicker {
+    0%, 100% {
+        opacity: 0.95;
+    }
+    10%, 90% {
+        opacity: 0.9;
+    }
+    20%, 80% {
+        opacity: 0.85;
+    }
+    30%, 70% {
+        opacity: 0.8;
+    }
+    40%, 60% {
+        opacity: 0.75;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+/* Apply the animation to the image */
+.Siempje6draait {
+    width: 200px; /* Adjust the size as needed */
+    height: auto;
+    animation: flicker 2s infinite; /* 1 second for each flicker cycle */
+    border-radius: 1em;
+}
